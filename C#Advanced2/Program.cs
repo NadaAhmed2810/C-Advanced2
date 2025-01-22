@@ -1,10 +1,61 @@
-﻿namespace C_Advanced2
+﻿using System.Collections;
+
+namespace C_Advanced2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Non_Generic_Collection_ArrayList
+
+            #region Constructors
+            ////Boxing and un Boxing 
+            //ArrayList Numbers = new ArrayList();
+            //Console.WriteLine($"Count:{Numbers.Count},Capacity:{Numbers.Capacity}");
+            //Numbers.Add(1);
+            //Numbers.Add(2);
+            //Numbers.AddRange(new int[] { 3, 4 });
+            //Console.WriteLine(value: $"Count:{Numbers.Count},Capacity:{Numbers.Capacity}");
+            //Numbers.Add(5);
+            //Console.WriteLine(value: $"Count:{Numbers.Count},Capacity:{Numbers.Capacity}");
+            //Numbers.TrimToSize();
+            //Console.WriteLine("____After Trim____");
+            //Console.WriteLine(value: $"Count:{Numbers.Count},Capacity:{Numbers.Capacity}");
+
+
+            ////overloading Constructor take the Capacity
+            //ArrayList Numbers01 = new ArrayList(9) { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //Console.WriteLine(value: $"Count:{Numbers01.Count},Capacity:{Numbers01.Capacity}");
+
+            ////overloading Constructor take object From Class Implement ICollection 
+            //int[] Arr = { 1, 2, 3, 5, 6, 7, 8, 9 };
+            //ArrayList Numbers02 = new ArrayList(Arr); 
+            #endregion
+
+            #region Improve Double of Capacity
+            //ArrayList Numbers = new ArrayList(5) { 1, 2, 3, 4, 5 };
+            ////Numbers[5] = 6;// index Out Of Range Can not Access Index<0 || Index >= Count 
+            ////Numbers[3] = 7; //Can make get or set in Index in Range 0 to Count -1
+
+            //Console.WriteLine(value: $"Count:{Numbers.Count},Capacity:{Numbers.Capacity}");
+            ////Numbers.EnsureCapacity(21);
+            ////here i do 3 copy to array and will have 19 element extra
+
+            //// But I Can Do this 
+            //if (Numbers.Capacity < 21)
+            //{
+            //    Numbers.Capacity = 21;
+            //}
+            //for (int i = 6; i <= 21; i++)
+            //{
+            //    Numbers.Add(i);
+            //}
+            //Console.WriteLine(value: $"Count:{Numbers.Count},Capacity:{Numbers.Capacity}"); 
+            #endregion
+
+
+
+            #endregion
         }
     }
 }
