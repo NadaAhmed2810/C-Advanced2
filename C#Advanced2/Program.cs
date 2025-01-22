@@ -4,6 +4,19 @@ namespace C_Advanced2
 {
     internal class Program
     {
+        public static int SumOfArray(ArrayList array)
+        {
+            int sum = 0;
+            if(array != null) 
+                for (int i = 0; i < array.Count; i++)
+                {
+                    sum += (int?)array[i] ?? 0;//Casting from [ReferenceType] to [ValueType]
+                                               //unboxing [unsafe] 
+                                               //Compiler Can not unforce Type Safety
+
+                }
+            return sum;
+        }
         static void Main(string[] args)
         {
             #region Non_Generic_Collection_ArrayList
@@ -56,6 +69,15 @@ namespace C_Advanced2
 
 
             #endregion
+            #region Problems in NonGenericCollection
+            //ArrayList Numbers= new ArrayList();
+            //Numbers.Add(1);//Casting from int[ValueType] to object [Reference type]==>Boxing
+            //int result=SumOfArray(Numbers);
+            //Console.WriteLine($"Result:{result}");
+
+            #endregion
+
+
         }
     }
 }
