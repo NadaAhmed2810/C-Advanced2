@@ -10,16 +10,16 @@ namespace Assignment
     {
         static void ReverseQueue(Queue<int> queue)
         {
-           
+
             Stack<int> stack = new Stack<int>();
 
-          
+
             while (queue.Count > 0)
             {
                 stack.Push(queue.Dequeue());
             }
 
-            
+
             while (stack.Count > 0)
             {
                 queue.Enqueue(stack.Pop());
@@ -239,7 +239,7 @@ namespace Assignment
             //{
             //    for (int j = i; j < 5; j++)
             //    {
-                   
+
             //        int Sum = (i == 0) ? list[j] : list[j] - list[i - 1];
 
             //        if (Sum == target)
@@ -251,6 +251,40 @@ namespace Assignment
             //if (f) Console.WriteLine("Yes");
             //else Console.WriteLine("False");
             #endregion
+            #region Q11
+
+
+            //    Queue<int> queue = new Queue<int>(5);
+            //    int k = 3;
+            //    queue.Enqueue(1);
+            //    queue.Enqueue(2);
+            //    queue.Enqueue(3);
+            //    queue.Enqueue(4);
+            //    queue.Enqueue(5);
+            //    Stack<int> stack = new Stack<int>();
+
+            //    for (int i = 0; i < k; i++)
+            //    {
+            //        stack.Push(queue.Dequeue());
+            //    }
+
+            //    while (stack.Count > 0)
+            //    {
+            //        queue.Enqueue(stack.Pop());
+            //    }
+
+            //    for (int i = 0; i < queue.Count - k; i++)
+            //    {
+            //        queue.Enqueue(queue.Dequeue());
+            //    }
+
+            //   foreach(int i in queue)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //
+            #endregion
         }
     }
 }
+
