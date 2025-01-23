@@ -76,6 +76,36 @@ namespace C_Advanced2
             //Console.WriteLine($"Result:{result}");
 
             #endregion
+            #region Generic Collection List
+           // List<int> Numbers = new List<int>();
+            //Console.WriteLine($"Count:{Numbers.Count},Capacity:{Numbers.Capacity}");
+            //Numbers.Add(1);
+            //Numbers.Add(2);
+            //Numbers.AddRange(new int[] { 3, 4 });
+            //Console.WriteLine(value: $"Count:{Numbers.Count},Capacity:{Numbers.Capacity}");
+            //Numbers.Add(5);
+            //Console.WriteLine(value: $"Count:{Numbers.Count},Capacity:{Numbers.Capacity}");
+            //Numbers.TrimExcess();
+            //Console.WriteLine("____After Trim____");
+            //Console.WriteLine(value: $"Count:{Numbers.Count},Capacity:{Numbers.Capacity}");
+            //List<int> Numbers01 = new List<int>(5) { 1,2,3,4,5};
+            //Console.WriteLine($"Count:{Numbers01.Count},Capacity:{Numbers01.Capacity}");
+            //Numbers01.Add(6);
+            //Numbers01.Add(7);
+            //Numbers01.AddRange([8, 9,10]);
+            //Console.WriteLine(value: $"Count:{Numbers01.Count},Capacity:{Numbers01.Capacity}");
+            //Numbers01.Add(11);
+            //Console.WriteLine(value: $"Count:{Numbers01.Count},Capacity:{Numbers01.Capacity}");
+            //int[] arr = [1,2,3,4,5,6];
+            //List<int>Numbers02 = new List<int>(arr);
+            //Console.WriteLine(value: $"Count:{Numbers02.Count},Capacity:{Numbers02.Capacity}");
+            //Numbers02.EnsureCapacity(21);
+            //for(int i =7 ; i<= 21; i++)
+            //{
+            //    Numbers02.Add(i);
+            //}
+
+            #endregion
 
 
         }
