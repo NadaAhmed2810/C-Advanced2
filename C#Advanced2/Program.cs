@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Globalization;
 
 namespace C_Advanced2
 {
@@ -7,7 +8,7 @@ namespace C_Advanced2
         public static int SumOfArray(ArrayList array)
         {
             int sum = 0;
-            if(array != null) 
+            if (array != null)
                 for (int i = 0; i < array.Count; i++)
                 {
                     sum += (int?)array[i] ?? 0;//Casting from [ReferenceType] to [ValueType]
@@ -77,7 +78,7 @@ namespace C_Advanced2
 
             #endregion
             #region Generic Collection List
-           // List<int> Numbers = new List<int>();
+            // List<int> Numbers = new List<int>();
             //Console.WriteLine($"Count:{Numbers.Count},Capacity:{Numbers.Capacity}");
             //Numbers.Add(1);
             //Numbers.Add(2);
@@ -106,8 +107,94 @@ namespace C_Advanced2
             //}
 
             #endregion
+            #region Methods of List
+            //List<int> nums = new List<int>(5) {5, 1,2, 3, 4, 5 };
+            ////nums.Insert(0, 100);
+            ////nums.InsertRange(1, [101, 102, 103, 104, 105]);
+            ////IReadOnlyList<int> ReadOnlynums=  nums.AsReadOnly();//can not make any change like add or update
+            ////                                                    //but any change in base list reflect to it 
+            ////nums.AddRange([6,7,8]);
+            ////nums[0] = 0;
+            ////foreach (int x in ReadOnlynums)
+            ////{
+            ////    Console.WriteLine(x);
+            ////}
+            //Console.WriteLine(value: $"Count:{nums.Count},Capacity:{nums.Capacity}");
+            //nums.Clear();
+            //Console.WriteLine(value: $"Count:{nums.Count},Capacity:{nums.Capacity}");
 
+            //List<long> newNumbers = nums.ConvertAll<long>(N=>N);// Not Recommended
+            //List<long> newNumbers = nums.Select<int,long>(N => N).ToList();//Return Interface Implement all Collection 
+
+            //foreach (int n in newNumbers)
+            //{
+            //    Console.WriteLine(n);
+            //}
+            #region Bineary Search
+            //int Index =nums.BinarySearch(4);
+            //Index = nums.BinarySearch(10);//-6
+            //Index = nums.BinarySearch(2);//-2
+            //Console.WriteLine($"Index={Index}");
+            //List<Employee> employees = new List<Employee>()
+            //{
+            //    new Employee(1,"Nada", 3000),
+            //    new Employee(2,"Noura", 40000),
+            //    new Employee(3,"Nour", 5000)
+            //};
+            //int Index = employees.BinarySearch(new Employee(5, "Radwa", 40000));
+            //employees.Sort(new EmployeeComparerByName());
+            //Index = employees.BinarySearch(new Employee(3, "Nour", 40000), new EmployeeComparerByName());
+            //Index = employees.BinarySearch(1, 2, new Employee() { Name = "Nour" }, new EmployeeComparerByName());
+
+            //Console.WriteLine($"Index={Index}"); 
+            #endregion
+            #region Copy
+            //int[] Arr = new int[10];
+            //nums.CopyTo(Arr);
+            //nums.CopyTo( Arr, 5 );
+            //nums.CopyTo(2, Arr, 2, 3);
+            //for (int i = 0; i < Arr.Length; i++)
+            //{
+            //    Console.WriteLine(Arr[i]);
+            //} 
+            #endregion
+            #region FindMethods
+            //int FirstEvenNumbers = nums.Find(N => N % 2 == 0);
+            //int Index = nums.FindIndex(N => N % 2 == 0);
+            //int LastEvenNumbers = nums.FindLast(N => N % 2 == 0);
+            //int lastIndex = nums.FindLastIndex(N => N % 2 == 0);
+            //List<int> EvebNumbers = nums.FindAll(N => N % 2 == 0);
+
+            #endregion
+            #region Index
+            //bool isExist = nums.Exists(N => N % 2 == 0);
+            //nums.TrueForAll(N => N % 2 == 0);
+            //nums.ForEach(N =>
+            //{
+            //    N += 100;
+            //    Console.WriteLine(N);
+            //});
+            //for (int i = 0; i < nums.Count; i++)
+            //{
+            //    Console.WriteLine(nums[i]);
+            //}
+            //List<int> Numbers01 = nums.GetRange(0, 3);
+            //List<int> Numbers02 = nums.Slice(0, 3);
+            //Console.WriteLine(nums.IndexOf(3));
+            //Console.WriteLine(nums.IndexOf(3, 1));
+            //Console.WriteLine(nums.IndexOf(5, 1, 2));
+
+            //Console.WriteLine(nums.LastIndexOf(3));
+            //Console.WriteLine(nums.LastIndexOf(3, 1));
+            //Console.WriteLine(nums.LastIndexOf(5, 1, 2)); 
+            #endregion
+
+
+
+            #endregion
+         
 
         }
     }
+   
 }
