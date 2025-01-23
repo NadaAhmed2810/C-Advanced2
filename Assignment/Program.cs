@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -174,6 +175,33 @@ namespace Assignment
             //{
             //    Console.WriteLine(item);
             //}
+            #endregion
+            #region Q8
+            //Stack<int>st = new Stack<int>();
+            //st.Push(42);
+            //st.Push(43);
+            //st.Push(60);
+            //st.Push(10);
+            //st.Push(20);
+            //st.Push(30);
+            //Console.WriteLine("Enter the target integer to search for:");
+            //int target = int.Parse(Console.ReadLine());
+            //int Count = 0;
+            //bool f= false;
+            //while (st.Count > 0)
+            //{
+            //    int current = st.Pop();
+            //    Count++;
+
+            //    if (current == target)
+            //    {
+            //        Console.WriteLine($"Target was found successfully and the count = {Count}");
+            //        f = true;
+            //        break;
+            //    }
+            //}
+
+            //if(!f)Console.WriteLine("Target was not found");
             #endregion
         }
     }
