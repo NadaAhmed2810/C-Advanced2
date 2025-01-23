@@ -144,7 +144,7 @@ namespace Assignment
             //{
             //    for (int j = i + 1; j < list.Count; j++)
             //    {
-                    
+
             //        if (list[i].Equals(list[j]))
             //        {
             //            list.RemoveAt(j);
@@ -155,6 +155,14 @@ namespace Assignment
             //foreach (int i in list)
             //{
             //    Console.WriteLine(i);
+            //}
+            #endregion
+            #region Q6
+            //List<int> list = new List<int>(5) {1,2,3,4,5 };
+            //list.RemoveAll(item => (int)item % 2 != 0);
+            //foreach (int item in list)
+            //{
+            //    Console.WriteLine(item);
             //}
             #endregion
         }
