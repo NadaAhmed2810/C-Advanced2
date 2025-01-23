@@ -165,6 +165,16 @@ namespace Assignment
             //    Console.WriteLine(item);
             //}
             #endregion
+            #region Q7
+            //Queue queue = new Queue();
+            //queue.Enqueue(1);
+            //queue.Enqueue(2.9);
+            //queue.Enqueue("Apple");
+            //foreach (var item in queue)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
         }
     }
 }
