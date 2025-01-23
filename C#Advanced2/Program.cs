@@ -201,6 +201,24 @@ namespace C_Advanced2
             //Numbers.AddBefore(FourthNode, 3);
             //Console.WriteLine(FirstNode.Next.Value);//2
             #endregion
+            #region Stack
+            //Stack<int> stack = new Stack<int>();
+            //stack.Push(1);
+            //stack.Push(2);
+            //stack.Push(3);
+            //Console.WriteLine(stack.Peek());
+            //stack.TryPop(out int Value);//3
+            //stack.TryPop(out int Value01);//2
+            //stack.TryPop(out int Value02);//1
+            //stack.TryPop(out int Value03);
+            //Console.WriteLine(stack.Peek());
+
+
+            //foreach (int i in stack)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            #endregion
 
         }
     }
