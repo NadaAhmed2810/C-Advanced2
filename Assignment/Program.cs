@@ -1,4 +1,6 @@
 ﻿using System.Collections.Immutable;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
 namespace Assignment
 {
@@ -107,7 +109,34 @@ namespace Assignment
             //    Console.WriteLine(item);
             //}
             #endregion
+            #region Q4:Given a Stack, implement a function to check if a string of parentheses is balanced using a stack.
+            //Console.WriteLine("Enter the string:");
+            //string s=Console.ReadLine();
+            //Stack<char> stack = new Stack<char>();
+            //bool f = true;
+            //for(int i = 0; i < s.Length; i++)
+            //{
+            //    if (s[i]=='(' || s[i]=='{' || s[i] == '[') stack.Push(s[i] );
+            //    else if (s[i] == ')' || s[i] == '}' || s[i] == ']')
+            //    {
+                   
+            //        if (stack.Count == 0)
+            //        {
+            //           f=false;
+            //        }
+            //        char c = stack.Pop();
+            //        f= (c == '(' && s[i] == ')') ||
+            //        (c == '{' && s[i] == '}') ||
+            //          (c == '[' && s[i] == ']');
+            //    }
+            //    else if(f==false) break;
 
+
+            //}
+            //if (f && stack.Count==0) Console.WriteLine("Yes");
+            //else Console.WriteLine("No");
+
+            #endregion
         }
     }
 }
