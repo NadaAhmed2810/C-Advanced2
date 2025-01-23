@@ -192,7 +192,15 @@ namespace C_Advanced2
 
 
             #endregion
-         
+            #region Generic Collection Linked List
+            //Double Linked List
+            //LinkedList<int> Numbers = new LinkedList<int>();
+            //LinkedListNode<int> FirstNode = Numbers.AddFirst(1);
+            //LinkedListNode<int> FourthNode = Numbers.AddLast(value: 4);
+            //Numbers.AddAfter(FirstNode, 2);
+            //Numbers.AddBefore(FourthNode, 3);
+            //Console.WriteLine(FirstNode.Next.Value);//2
+            #endregion
 
         }
     }
