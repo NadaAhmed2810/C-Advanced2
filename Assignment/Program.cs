@@ -203,6 +203,54 @@ namespace Assignment
 
             //if(!f)Console.WriteLine("Target was not found");
             #endregion
+            #region Q9
+            //List<int> list = new List<int>(5) { 1, 2, 3, 4, 4 };
+            //List<int> list02 = new List<int>(3) { 10, 4, 4 };
+            //List<int>Result=new List<int>();
+
+            //foreach(int i in list)
+            //{
+            //    if (list02.Contains(i))
+            //    {
+            //        Result.Add(i);
+            //        list02.Remove(i);
+            //    }
+            //}
+
+            //foreach (int i in Result)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            #endregion
+            #region Q10
+            //List<int> list = new List<int>() { 1, 2, 3, 7, 5 };
+            //bool f = false;
+            //int target = 12;
+            //for(int i = 1; i < 5; i++)
+            //{
+            //    if (list[i] == target)
+            //    {
+            //        f=true;
+            //        break;
+            //    }
+            //    list[i] += list[i - 1];
+            //}
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    for (int j = i; j < 5; j++)
+            //    {
+                   
+            //        int Sum = (i == 0) ? list[j] : list[j] - list[i - 1];
+
+            //        if (Sum == target)
+            //        {
+            //            f= true;
+            //        }
+            //    }
+            //}
+            //if (f) Console.WriteLine("Yes");
+            //else Console.WriteLine("False");
+            #endregion
         }
     }
 }
