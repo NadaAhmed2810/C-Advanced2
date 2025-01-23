@@ -219,6 +219,29 @@ namespace C_Advanced2
             //    Console.WriteLine(i);
             //}
             #endregion
+            #region Queue
+            //Queue<int> queue = new Queue<int>();
+            //queue.Enqueue(1);
+            //queue.Enqueue(2);
+            //queue.Enqueue(3);
+            //queue.Enqueue(4);
+            //queue.TryDequeue(out int Value01);
+            //queue.TryDequeue(out int Value02);
+            //queue.TryDequeue(out int Value03);
+            //queue.TryDequeue(out int Value04);
+            //queue.TryDequeue(out int Value05);
+
+            //Console.WriteLine(Value01);
+            //Console.WriteLine(Value02);
+            //Console.WriteLine(Value03);
+            //Console.WriteLine(Value04);
+            //Console.WriteLine(Value05);
+
+            //foreach (int i in queue)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            #endregion
 
         }
     }
